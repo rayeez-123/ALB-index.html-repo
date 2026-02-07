@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CloudRayeez | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 50px 40px;
+      text-align: center;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+      color: #ddd;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    a.button {
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 30px;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(135deg, #ff512f, #dd2476);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 20px rgba(221, 36, 118, 0.4);
+    }
+
+    a.button.shows {
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+      box-shadow: 0 8px 20px rgba(91, 134, 229, 0.4);
+    }
+
+    a.button:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #bbb;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome to CloudRayeez 🚀</h1>
+    <p>Your one-stop destination for Movies & Shows</p>
+
+    <div class="btn-group">
+      <a class="button" href="https://www.cloudrayeez.xyz/movies/" target="_blank">
+        🎬 Explore Movies
+      </a>
+
+      <a class="button shows" href="https://www.cloudrayeez.xyz/shows/" target="_blank">
+        📺 Explore Shows
+      </a>
+    </div>
+
+    <footer>
+      © 2026 CloudRayeez • Powered by Nginx
+    </footer>
+  </div>
+</body>
+</html>
